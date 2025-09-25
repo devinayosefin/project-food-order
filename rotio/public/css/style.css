@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5dad4; /* Background dengan warna yang lebih terang */
+}
+
+body.register-page .logo {
+    width: 120px;
+    height: auto;       /* biar proporsinya tetap */
+    display: block;
+    margin: 0 auto 25px; /* biar tetap di tengah + ada jarak bawah */
+}
+
+
+/* Brown bar at the top */
+.top-bar {
+    background-color: #7c4928;
+    height: 55px;  /* Increased thickness */
+    width: 100%;
+    margin: 0; /* Ensure it sticks to the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it stays on top of other elements */
+}
+
+
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5dad4; /* Warna latar belakang halaman */
+    padding-top: 20px;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #4c2e17; /* Warna coklat gelap untuk heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #7c4928; /* Border coklat medium */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #4c2e17; /* Text warna coklat gelap */
+}
+
+input:focus {
+    outline: none;
+    border-color: #fbac18; /* Warna oranye saat fokus */
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #fbac18; /* Warna oranye terang */
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7c4928; /* Warna coklat medium saat hover */
+}
+
+.text-sm {
+    font-size: 14px;
+    color: #7c4928; /* Coklat medium untuk teks kecil */
+}
+
+.text-sm a {
+    color: #4c2e17;
+}
+
+.text-sm a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.message.error {
+    background-color: #ffcccc;
+    color: #7c0000;
+    border: 1px solid #cc0000;
+}
+
+.message.success {
+    background-color: #d6f5d6;
+    color: #1f6f1f;
+    border: 1px solid #1f6f1f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header dengan dua warna (atas oren, bawah coklat) */
+.navbar {
+    background: linear-gradient(to bottom, #fbac18, #7c4928);
+}
+
+/* Logo di tengah */
+.auth-wrapper .logo {
+    display: block;
+    margin: 0 auto;
+    width: 80px; /* Ukuran logo */
+    height: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .auth-wrapper {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
